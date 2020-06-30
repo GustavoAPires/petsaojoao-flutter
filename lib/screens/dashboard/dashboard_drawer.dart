@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:petsaojoao/screens/my_pets/my_pets.dart';
+import 'package:petsaojoao/screens/profile_tutor/profile_tutor.dart';
 import 'package:petsaojoao/screens/register_tutor/register_tutor.dart';
 import 'constants.dart' as Constants;
 
@@ -31,6 +33,21 @@ class DashboardDrawer extends StatelessWidget{
             ListTile(
               leading: const Icon(Icons.account_circle),
               title: const Text(Constants.DRAWER_PROFILE),
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ProfileTutor())
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.list),
+              title: const Text(Constants.DRAWER_MY_PETS),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyPets()),
+                );
+              },
             ),
             ListTile(
               leading: const Icon(Icons.pets),

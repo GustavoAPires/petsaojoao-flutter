@@ -36,6 +36,7 @@ dependencies:
   http: ^0.12.0+4
   dio: ^3.0.9
   firebase_storage: ^3.1.5
+  cloud_firestore: ^0.13.7
   flutter_masked_text: ^0.8.0
   logger: ^0.9.1
   via_cep: ^1.0.6
